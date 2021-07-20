@@ -15,26 +15,6 @@
             </div>
             <div data-elem="body" class="staff-table__body">
                 <Person v-for="(person, idx) in usersTree" :key="idx" :usersList="tableData" :user="person" />
-                <!-- <div v-for="(person, idx) in tableData" :key="idx" class="staff-table__row">
-                    <div class="staff-user">
-                        <div class="staff-table__cell">
-                            {{person.name}}
-                        </div>
-                        <div class="staff-table__cell">
-                            {{person.phone}}
-                        </div>
-                    </div>
-                    <div v-for="(sub, idx) in person.subs" :key="idx" class="staff__subs">
-                        <div class="subs__row">
-                            <div class="staff-table__cell">
-                                {{sub.name}}
-                            </div>
-                            <div class="staff-table__cell">
-                                {{sub.phone}}
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
         <div v-else class="table-placeholder">
